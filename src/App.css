@@ -1,38 +1,113 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+    margin-top: 10%;
+    text-align: center;
+  }
+  
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
   }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #09d3ac;
+  }
+  
+  .codeContainer {
+    margin: 5% auto;
+  }
+  
+  .codeInput {
+    width: 3rem !important;
+    height: 3rem;
+    margin: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  .codeInputError {
+    width: 3rem !important;
+    height: 3rem;
+    margin: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgba(248, 4, 4, 0.3);
+  }
+  
+
+  h1 {
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+
+  h2{
+    color:black;
+  }
+
+  h3{
+    color: white;
+  }
+
+button{
+  border-radius: 6px;
+  height: 55px;
+  width: 180px;
+  margin: 10px auto;
+  background-color:#040480;
+}  
+i {
+  color: #9ABC66;
+  font-size: 100px;
+  line-height: 200px;
+  margin-left:-15px;
+}
+.card {
+  background: white;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.oaerror{
+  width:80%;
+  background-color: #ffffff;
+  padding:20px;
+  border:1px solid #eee;
+  border-left-width:5px;
+  border-radius: 3px;
+  margin:10px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.danger{
+  border-left-color: #d9534f; /* Left side border color */
+  background-color: rgba(217, 83, 79, 0.1); /*Same color as the left border with reduced alpha to 0.1*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.danger strong{
+  color:#d9534f;
 }
